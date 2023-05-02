@@ -1,0 +1,10 @@
+.barra{
+    border-bottom: 1px solid #cbd0dd;
+}
+
+.logo_nav {
+    padding: 0 15px;
+}
+.logo_nav img {
+    height: 40px;
+}

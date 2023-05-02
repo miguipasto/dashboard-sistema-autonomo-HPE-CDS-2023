@@ -1,0 +1,24 @@
+{
+  "GEO001": {
+    "baja": 1129,
+    "media": 2765,
+    "alta": 4372,
+    "coste_generacion": 10,
+    "coste_transporte": 0.2,
+    "emisiones": 0,
+    "penalizacion_industrial": 0.1,
+    "penalizacion_residencial": 0.3,
+    "penalizacion_servicios": 0.1
+  },
+  "GEO002": {
+    "baja": 996,
+    "media": 2496,
+    "alta": 3647,
+    "coste_generacion": 8,
+    "coste_transporte": 0.2,
+    "emisiones": 0,
+    "penalizacion_industrial": 0.1,
+    "penalizacion_residencial": 0.3,
+    "penalizacion_servicios": 0.1
+  }
+}

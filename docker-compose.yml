@@ -1,0 +1,143 @@
+version: '3.3'
+
+services:
+  kafka:
+    image: wurstmeister/kafka
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ADVERTISED_PORT: 9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LISTENERS: INTERNAL://0.0.0.0:9092,EXTERNAL://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:9092,EXTERNAL://localhost:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_DELETE_RETENTION_MS: 0
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+    ports:
+      - "9093:9093"
+    depends_on:
+      - zookeeper
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    restart: always
+
+  kafka_daily_reporter:
+    build:
+      context: ./greenlakecity/kafka_daily_reporter
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/daily_reports/:/app/data/
+    environment:
+      KAFKA_HOST: kafka
+      KAFKA_PORT: 9092
+      START_DATE: 01/01/2030
+      END_DATE: 31/01/2030
+      DAY_SIMULATION_INTERVAL_SECONDS: 1
+    depends_on:
+      - kafka
+      - zookeeper
+
+  locations_information_system:
+    build:
+      context: ./greenlakecity/api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/datalake/locations/:/app/data/
+    ports:
+      - "8081:8081"
+
+  sun_energy_information_system:
+    build:
+      context: ./greenlakecity/api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/datalake/sun_energy/:/app/data/
+    ports:
+      - "8082:8081"
+
+  wind_energy_information_system:
+    build:
+      context: ./greenlakecity/api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/datalake/wind_energy/:/app/data/
+    ports:
+      - "8083:8081"
+
+  water_energy_information_system:
+    build:
+      context: ./greenlakecity/api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/datalake/water_energy/:/app/data/
+    ports:
+      - "8084:8081"
+
+  geo_energy_information_system:
+    build:
+      context: ./greenlakecity/api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/datalake/geo_energy/:/app/data/
+    ports:
+      - "8085:8081"
+
+  coal_energy_information_system:
+    build:
+      context: ./greenlakecity/api_controller
+      dockerfile: Dockerfile
+    volumes:
+      - ./greenlakecity/data/datalake/coal_energy/:/app/data/
+    ports:
+      - "8086:8081"
+
+  kafka_consumer_check:
+    build:
+      context: ./greenlakecity/kafka_consumer_check
+      dockerfile: Dockerfile
+    environment:
+      KAFKA_HOST: kafka
+      KAFKA_PORT: 9092
+    depends_on:
+      - kafka
+      - zookeeper
+
+  backend_zambu:
+    build:
+      context: ./Zamburinhas_web/BackEnd
+      dockerfile: Dockerfile
+    image: backend_zambu
+    container_name: backend_zambu
+    network_mode: host
+    environment:
+      - MONGO_URI=mongodb://localhost/HPE_FINAL
+    depends_on:
+      - mongo_zambu
+
+  frontend_zambu:
+    build:
+      context: ./Zamburinhas_web/FrontEnd
+      dockerfile: Dockerfile
+    image: frontend_zambu
+    container_name: frontend_zambu
+    network_mode: host
+
+  mongo_zambu:
+    image: mongo
+    container_name: mongo_zambu
+    network_mode: host
+    volumes:
+      - ./BD:/data/db
+
+  microservicio_zambu:
+    build:
+      context: ./Zamburinhas_web/BackEnd/microservicio_analisis
+      dockerfile: Dockerfile
+    image: microservicio_zambu
+    container_name: microservicio_zambu
+    network_mode: host
+    depends_on:
+      - backend_zambu

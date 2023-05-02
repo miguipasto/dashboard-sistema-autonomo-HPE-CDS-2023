@@ -1,0 +1,30 @@
+{
+  "WAT001": {
+    "ratio": 0.20,
+    "coste_generacion": 5,
+	"coste_transporte": 0.25,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.4,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1,
+	"capacidad_total": 3162,
+	"superficie": 24527,
+	"altura": 13,
+	"nivel_inicial": 2845
+  },
+  "WAT002": {
+	"ratio": 0.18,
+    "coste_generacion": 3,
+	"coste_transporte": 0.25,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.4,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1,
+	"capacidad_total": 2615,
+	"superficie": 19863,
+	"altura": 16,
+	"nivel_inicial": 2205
+  }
+}
+
+

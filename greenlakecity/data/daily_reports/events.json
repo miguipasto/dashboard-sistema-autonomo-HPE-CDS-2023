@@ -1,0 +1,126 @@
+{
+    "01/01/2030": {
+      "SUN002": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "02/01/2030": {
+      "SUN002": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      },
+      "WIND003": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "03/01/2030": {
+      "SUN003": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      },
+      "WIND003": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "05/01/2030": {
+      "SUN003": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "07/01/2030": {
+      "WIND002": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "08/01/2030": {
+      "WIND002": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "10/01/2030": {
+      "GEO002": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      },
+      "SUN001": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "11/01/2030": {
+      "GEO002": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "12/01/2030": {
+      "WAT002": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      },
+      "SUN001": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "14/01/2030": {
+      "WAT002": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "15/01/2030": {
+      "GEO001": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "16/01/2030": {
+      "GEO001": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      },
+      "WIND001": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "17/01/2030": {
+      "WIND001": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "20/01/2030": {
+      "WAT001": {
+        "Event Type": "START_MAINTENANCE",
+        "Comments": "Start Central Maintenance"
+      }
+    },
+    "21/01/2030": {
+      "WAT001": {
+        "Event Type": "END_MAINTENANCE",
+        "Comments": "Stop Central Maintenance"
+      }
+    },
+    "19/01/2030": {
+      "WAT001": {
+        "Event Type": "DANA",
+        "Comments": "Exceptional rains, Dana (liters per square meter)",
+        "Volume": 5967
+      }
+    },
+    "25/01/2030": {
+      "WAT002": {
+        "Event Type": "DANA",
+        "Comments": "Exceptional rains, Dana (liters per square meter)",
+        "Volume": 7278
+      }
+    }
+  }

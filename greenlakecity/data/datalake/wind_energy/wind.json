@@ -1,0 +1,35 @@
+{
+  "WIND001": {
+    "leve": 3650,
+    "moderado": 4012,
+    "fuerte": 5007,
+    "coste_generacion": 8,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.2,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1
+  },
+  "WIND002": {
+    "leve": 3879,
+    "moderado": 4100,
+    "fuerte": 5504,
+    "coste_generacion": 6.5,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.2,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1
+  },
+  "WIND003": {
+    "leve": 2986,
+    "moderado": 3890,
+    "fuerte": 4998,
+    "coste_generacion": 5,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.2,
+	"penalizacion_residencial": 0,
+	"penalizacion_servicios": 0.1
+  }
+}

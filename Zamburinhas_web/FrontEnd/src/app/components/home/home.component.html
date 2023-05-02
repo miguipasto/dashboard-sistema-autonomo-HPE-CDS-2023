@@ -1,0 +1,115 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div id="todo_wrapper">
+    <div id="todo">
+        <div id="todo_sidebar">
+            <div id="sidebar">
+                <div id="textoBar">
+                    <div id="close-tab">
+                        <div id="close" (click)="cerrarSideBar()"></div>
+                    </div>
+                    <div id="tituloBar">
+                        <h1 id="central_name">{{central_name}}</h1>
+                    </div>
+                    <div id="informacion">
+                        <div id="cajaIzquierda">
+                            <h3>Datos Técnicos</h3>
+                            <div id="datosCentral" *ngFor="let key of centrales_keys">
+                                <p>{{key.charAt(0).toUpperCase() + key.slice(1)}}: {{centrales_info[central_name][key]}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="grafica_bar">
+                    <div id="graficaBarCostes"></div>
+                </div>
+            </div>
+        </div>
+        <div id="columna1">
+            <div id="inputs">
+                <div id="fechas_wrapper">
+                    <div id="fecha_seleccion">
+                        <div id="fechas_input">
+                            <div id="fechaInput1">
+                                <label for="fecha-inicio">Fecha de inicio:&nbsp;</label>
+                                <input type="date" id="fecha-inicio" [(ngModel)]="fechaInicio"
+                                    (change)="onFechaChange()" [value]="fechaInicio" [min]="minDate" [max]="fechaFin">
+                            </div>
+                            <div id="fechaInput2">
+                                <label for="fecha-fin">Fecha de fin:&nbsp;</label>
+                                <input type="date" id="fecha-fin" [(ngModel)]="fechaFin" (change)="onFechaChange()"
+                                    [value]="fechaFin" [min]="fechaInicio" [max]="maxDate">
+                            </div>
+                        </div>
+                        <div id="areas">
+                            <button id="botonAbrirSeleccion" (click)="seleccionarAreas()">Seleccionar áreas y
+                                centrales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="penalizacion"></div>
+
+            </div>
+            <div id="grafica_coste"></div>
+        </div>
+
+        <div id="columna2">
+            <div id="grafica_circular" class="interactivo graficas"></div>
+            <div id="grafica_barras" class="interactivo graficas"></div>
+            <div id="grafica_pantano_1" class="interactivo graficas"></div>
+            <div id="grafica_pantano_2" class="interactivo graficas"></div>
+        </div>
+
+
+        <div id="seleccionar_areas">
+            <div id="seleccion_wrapper">
+                <div id="close-tab">
+                    <div id="seleccion_botones">
+                        <div id="textoRango">
+                            <label for="rango">Seleccionar un rango de áreas:</label>
+                        </div>
+                        <div id="selecionInputs">
+                            <div id="desde">
+                                <input type="text" id="rango" [(ngModel)]="inicio" (keyup.enter)="seleccionarRango()"
+                                    placeholder="Ej: 1">
+                            </div>
+                            <div id="hasta">
+                                <input type="text" id="rango" [(ngModel)]="fin" (keyup.enter)="seleccionarRango()"
+                                    placeholder="Ej: 95">
+                            </div>
+                            <div id="botonSeleccionarDesdeHasta">
+                                <button id="botonSeleccionar" class="btn area activar_area " type="button"
+                                    (click)="seleccionarRango()">Seleccionar</button>
+                            </div>
+                        </div>
+                        <div id="close" (click)="cerrarAreas()"></div>
+                    </div>
+                </div>
+                <div id="botones_seleccionar_areas">
+                    <div class="area-wrapper text-center talla" id="area" *ngFor="let area of areas"
+                        (click)="boton_selccionado(area)">
+                        <button type="button" class="btn btn-outline-secondary area activar_area area_button"
+                            id="{{area}}">{{area}}</button>
+                    </div>
+                </div>
+                <div id="textoYBotonSeleccionarEstaciones">
+                    <div id="textoCentrales">
+                        <label>Selecciona las centrales</label>
+                    </div>
+                    <div id="botones_seleccionar_estaciones">
+                        <div class="area-wrapper text-center talla" id="central" *ngFor="let central of centrales"
+                            (click)="boton_selccionado(central)">
+                            <button type="button" class="btn btn-outline-secondary area activar_area central_button"
+                                id="{{central}}">{{central}}</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>

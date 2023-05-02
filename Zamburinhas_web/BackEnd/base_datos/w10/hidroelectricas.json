@@ -1,0 +1,467 @@
+[
+    {
+      "fecha": "01/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 8550,
+            "River contribution": 6840
+          },
+          "WAT002": {
+            "Consumption": 6300,
+            "River contribution": 6930
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "02/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 8550,
+            "River contribution": 6840
+          },
+          "WAT002": {
+            "Consumption": 7000,
+            "River contribution": 8400
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "03/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 6120
+          },
+          "WAT002": {
+            "Consumption": 6300,
+            "River contribution": 6930
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "04/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 9000,
+            "River contribution": 10800
+          },
+          "WAT002": {
+            "Consumption": 5950,
+            "River contribution": 7735
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "05/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 6300,
+            "River contribution": 8190
+          },
+          "WAT002": {
+            "Consumption": 4900,
+            "River contribution": 5390
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "06/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 5355
+          },
+          "WAT002": {
+            "Consumption": 6300,
+            "River contribution": 7560
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "07/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 8550,
+            "River contribution": 11115
+          },
+          "WAT002": {
+            "Consumption": 3850,
+            "River contribution": 5005
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "08/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 6120
+          },
+          "WAT002": {
+            "Consumption": 3850,
+            "River contribution": 4235
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "09/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 5400,
+            "River contribution": 3780
+          },
+          "WAT002": {
+            "Consumption": 3850,
+            "River contribution": 5005
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "10/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 6300,
+            "River contribution": 8190
+          },
+          "WAT002": {
+            "Consumption": 5950,
+            "River contribution": 7735
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "11/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 6750,
+            "River contribution": 5400
+          },
+          "WAT002": {
+            "Consumption": 5600,
+            "River contribution": 7280
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "12/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 4950,
+            "River contribution": 4455
+          },
+          "WAT002": {
+            "Consumption": 6300,
+            "River contribution": 5670
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "13/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 8550,
+            "River contribution": 7695
+          },
+          "WAT002": {
+            "Consumption": 7000,
+            "River contribution": 7700
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "14/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 6750,
+            "River contribution": 8100
+          },
+          "WAT002": {
+            "Consumption": 5600,
+            "River contribution": 4480
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "15/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 9945
+          },
+          "WAT002": {
+            "Consumption": 5600,
+            "River contribution": 3920
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "16/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 8550,
+            "River contribution": 6840
+          },
+          "WAT002": {
+            "Consumption": 6300,
+            "River contribution": 8190
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "17/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 4950,
+            "River contribution": 5940
+          },
+          "WAT002": {
+            "Consumption": 5250,
+            "River contribution": 4200
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "18/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 5355
+          },
+          "WAT002": {
+            "Consumption": 5250,
+            "River contribution": 4200
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "19/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 4950,
+            "River contribution": 6435
+          },
+          "WAT002": {
+            "Consumption": 6300,
+            "River contribution": 5670
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "20/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 6885
+          },
+          "WAT002": {
+            "Consumption": 5600,
+            "River contribution": 4480
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "21/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 5400,
+            "River contribution": 6480
+          },
+          "WAT002": {
+            "Consumption": 6650,
+            "River contribution": 7315
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "22/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 8550,
+            "River contribution": 9405
+          },
+          "WAT002": {
+            "Consumption": 4550,
+            "River contribution": 4095
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "23/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 5850,
+            "River contribution": 5265
+          },
+          "WAT002": {
+            "Consumption": 4550,
+            "River contribution": 5005
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "24/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 5850,
+            "River contribution": 7605
+          },
+          "WAT002": {
+            "Consumption": 4900,
+            "River contribution": 5880
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "25/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 4950,
+            "River contribution": 3960
+          },
+          "WAT002": {
+            "Consumption": 5250,
+            "River contribution": 6300
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "26/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 6300,
+            "River contribution": 7560
+          },
+          "WAT002": {
+            "Consumption": 3850,
+            "River contribution": 5005
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "27/01/2030",
+      "centrales": [
+        {
+          "WAT001": {
+            "Consumption": 7650,
+            "River contribution": 5355
+          },
+          "WAT002": {
+            "Consumption": 5600,
+            "River contribution": 7280
+          }
+        }
+      ]
+    },
+    {
+        "fecha": "28/01/2030",
+        "centrales": [
+          {
+            "WAT001": {
+              "Consumption": 7200,
+              "River contribution": 8640
+            },
+            "WAT002": {
+              "Consumption": 5250,
+              "River contribution": 6300
+            }
+          }
+        ]
+      },
+      {
+        "fecha": "29/01/2030",
+        "centrales": [
+          {
+            "WAT001": {
+              "Consumption": 8100,
+              "River contribution": 7290
+            },
+            "WAT002": {
+              "Consumption": 5600,
+              "River contribution": 4480
+            }
+          }
+        ]
+      },
+      {
+        "fecha": "30/01/2030",
+        "centrales": [
+          {
+            "WAT001": {
+              "Consumption": 9000,
+              "River contribution": 8100
+            },
+            "WAT002": {
+              "Consumption": 5950,
+              "River contribution": 5355
+            }
+          }
+        ]
+      },
+      {
+        "fecha": "31/01/2030",
+        "centrales": [
+          {
+            "WAT001": {
+              "Consumption": 7200,
+              "River contribution": 8640
+            },
+            "WAT002": {
+              "Consumption": 4200,
+              "River contribution": 3780
+            }
+          }
+        ]
+      }
+  ]

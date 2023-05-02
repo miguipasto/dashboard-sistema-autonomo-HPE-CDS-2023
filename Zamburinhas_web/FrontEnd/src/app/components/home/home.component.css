@@ -1,0 +1,368 @@
+* {
+    width: 100%;
+    font-family: 'XXemeEtageRegular', 'Neue-Helvetica', 'Arial', Sans-Serif;
+}
+
+.interactivo {
+    border: 1.5px solid rgb(230,230,230);
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 4px gray; */
+    /* transition: 1s; */
+}
+
+/* .interactivo:hover {
+    z-index: 10;
+    transform: scale(1.025);
+} */
+
+#todo {
+    display: grid;
+    padding: 1%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background-color: #f5f7fa;  
+    grid-column-gap: 1%;
+    height: 100%;
+    border: 1.5px solid rgb(230,230,230);
+}
+
+#areas {
+    display: inline-block;
+    grid-row: 2;
+}
+
+#inputs{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+#fecha_seleccion{
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5%;
+}
+#fechas_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.graficas{
+    background-color: white;
+    display: inline-block;
+}
+#fechas_input{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1%;
+}
+#columna1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1%;
+    height: 100%;
+}
+#columna2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+}
+#grafica_coste{
+    background-color: transparent;
+}
+
+
+
+#seleccionar_areas {
+    background-color: rgb(100, 100, 100, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 10;
+    display: none;
+}
+
+#seleccion_wrapper {
+    background-color: white;
+    position: absolute;
+    margin: 2%;
+    width: 96%;
+    height: 92%;
+    z-index: 11;
+    display: grid;
+    grid-template-rows: 5fr 20fr;
+}
+
+#botones_seleccionar_areas {
+    display: grid;
+    margin-left: 1%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#textoYBotonSeleccionarEstaciones{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#botones_seleccionar_estaciones{
+    display: grid;
+    margin-bottom: 1%;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+
+#central {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2;
+    grid-column-gap: 5px;
+    margin-left: 15%;
+    margin-bottom: 5px;
+}
+
+#textoCentrales{
+    display: grid;
+    padding: 1%;
+}
+
+.area-wrapper {
+    align-items: center;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.area {
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+    border: 1.5px solid black;
+    width: 5vw;
+    height: 4vh;
+    color: black;
+    font-family: 'XXemeEtageRegular', 'Neue-Helvetica', 'Arial', Sans-Serif;
+    font-size: 85%;
+    font-weight: 300;
+    font-stretch: 100%;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+
+#area {
+    display: grid;
+}
+
+button {
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: #ccc;
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #525252, 0 5px 0 #525252, 0 6px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+button:hover {
+    background-color: rgb(117, 117, 117);
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        color: #ffffff;
+        text-shadow: 0 -1px 0 #000000;
+    }
+
+    50% {
+        color: #ffffff;
+        text-shadow: 0 -1px 0 #000000, 0 0 5px #ffd, 0 0 8px #fff;
+    }
+
+    100% {
+        color: #ffffff;
+        text-shadow: 0 -1px 0 #000000;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        color: #ffffff;
+        text-shadow: 0 -1px 0 #000000;
+    }
+
+    50% {
+        color: #ffffff;
+        text-shadow: 0 -1px 0 #000000, 0 0 5px #ffd, 0 0 8px #fff;
+    }
+
+    100% {
+        color: #ffffff;
+        text-shadow: 0 -1px 0 #000000;
+    }
+}
+
+button:active {
+    color: #fff;
+    box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0, 0, 0, 0.9);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    -webkit-animation: none;
+    animation: none;
+}
+
+.button_seleccionado {
+    color: #fff;
+    box-shadow: 0 1px 0 #000, 0 2px 0 #000, 0 2px 2px rgba(0, 0, 0, 0.9);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    -webkit-animation: none;
+    animation: none;
+    background-color: #333333;
+}
+
+#close {
+    display : grid;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#close:hover {
+    opacity: 1;
+}
+
+#close:before,
+#close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 1px;
+    background-color: #333;
+}
+
+#close:before {
+    transform: rotate(45deg);
+}
+
+#close:after {
+    transform: rotate(-45deg);
+}
+
+#close-tab {
+    display: grid;
+}
+
+#seleccion_botones{
+    display : grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+
+#textoRango{
+    display: grid;
+    font-family: 'XXemeEtageRegular', 'Neue-Helvetica', 'Arial', Sans-Serif;
+    padding: 1%;
+    padding-top: 2%;
+}
+
+#selecionInputs{
+    display : grid;
+    padding: 0.5%;
+    max-height: 50%;
+    grid-template-columns: 0.2fr 0.2fr 0.5fr 1fr 1fr;
+    grid-column-gap: 2%;
+}
+#desde{
+    display: grid;
+}
+
+#hasta{
+    display: grid;
+}
+
+#botonSeleccionarDesdeHasta{
+    display : grid;
+}
+
+#botonAbrirSeleccion{
+    color:#000;
+}
+
+
+#botonSeleccionar{
+    color : white;
+    box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0, 0, 0, 0.9);
+    background-color: #000;
+    width: 20vh;
+}
+
+#abrirAreas{
+    width: 20vh;
+}
+
+#sidebar{
+    display : none;
+}
+#todo_sidebar {
+    display: none;
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    z-index: 10;
+    background-color: #f5f7fa;
+    width: 50%;
+    height: 90%;
+}
+#tituloBar{
+    display:grid;
+}
+
+#central_name{
+    margin-top: 4%;
+    font-size: 35px;
+    text-align: center;
+}
+
+#textoBar{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+
+#informacion{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2%;
+    font-size: 12px;
+}
+
+#cajaDerecha,#cajaIzquierda{
+    display:grid;
+}
+
+#datosCentral{
+    display: grid;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+#piePagina{
+    background-color: rgba(19, 169, 131, 0.7);
+}

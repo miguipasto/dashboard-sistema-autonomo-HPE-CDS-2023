@@ -1,0 +1,11 @@
+{
+  "COAL001": {
+    "generacion": 999999999,
+    "coste_generacion": 15,
+	"coste_transporte": 0.2,
+	"emisiones": 400,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.5,
+	"penalizacion_servicios": 0.4
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "SUN001": {
+    "baja": 2876,
+    "media": 3350,
+    "alta": 4741,
+    "coste_generacion": 4,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.1,
+	"penalizacion_servicios": 0.2
+  },
+  "SUN002": {
+    "baja": 2456,
+    "media": 3492,
+    "alta": 4150,
+    "coste_generacion": 6,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.1,
+	"penalizacion_servicios": 0.2
+  },
+  "SUN003": {
+    "baja": 3615,
+    "media": 3867,
+    "alta": 5210,
+    "coste_generacion": 8,
+	"coste_transporte": 0.2,
+	"emisiones": 0,
+	"penalizacion_industrial": 0.3,
+	"penalizacion_residencial": 0.1,
+	"penalizacion_servicios": 0.2
+  }
+}
