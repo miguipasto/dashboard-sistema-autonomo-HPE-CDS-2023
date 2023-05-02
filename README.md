@@ -1,4 +1,4 @@
-# Dashboard Final HPE CDS 2023
+# Sistema autónomo elección centrales según coste
 
 # Capturas de pantalla
 ![image](https://user-images.githubusercontent.com/127023319/235784919-b0404417-315e-4f0a-89a3-81abe73dc66c.png)
