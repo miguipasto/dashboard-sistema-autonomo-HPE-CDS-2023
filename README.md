@@ -10,6 +10,7 @@ Para facilitar el uso del sistema, incorpora docker.
 Usar los siguientes comandos para utilizarlo:
 - docker-compose build
 - docker-compose up
+
       Enjoy!
 # Galería de imágenes
 ![image](https://user-images.githubusercontent.com/127023319/235784919-b0404417-315e-4f0a-89a3-81abe73dc66c.png)
