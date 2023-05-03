@@ -8,3 +8,5 @@
 # Developers
 - https://github.com/miguipasto
 - https://github.com/javilima01
+- https://github.com/mateocosta3
+- https://github.com/nico3457
