@@ -1,6 +1,7 @@
 # Descripción
-Este proyecto ha sido realizado con el MEAN stack además de con un microservicio en Python Flask. Fue presentado en la final del HPE CDS TECH CHALLENGE 2023 y sirvió para llegar a un segundo puesto de 65 equipos de todas las universidades Españolas.
-Se desarrolla una solución al problema de que centrales deben alimentar ciertas áreas de una ciudad según las emisiones, costes así como una "penalización" según para que vaya dirigida la producción de Energía. Permite elegir que areas de la ciudad alimentar, que centrales descartar además de tener en cuenta factores meteorológicos.
+Este proyecto ha sido realizado con el MEAN stack además de con un microservicio en Python Flask. Fue presentado en la final del HPE CDS TECH CHALLENGE 2023 y sirvió para obtener un segundo puesto de 65 equipos de todas las universidades Españolas.
+
+Se desarrolla una solución al problema de que centrales deben alimentar ciertas áreas de una ciudad según las emisiones, costes así como una "penalización" según para que vaya dirigida la producción de Energía. Permite elegir que areas de la ciudad alimentar y que centrales descartar además de tener en cuenta factores meteorológicos.
 
 Plantea una alternativa a la producción de energía no renovable, así como el malgaste de agua y la consecuente escasez de esta, además de los factores meteológicos debido al cambio climático. Todo esto está alineado con los puntos 6 y 7 de la agenda 2030 con el fin de un futuro mejor.
 # Galería de imágenes
